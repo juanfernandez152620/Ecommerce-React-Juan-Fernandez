@@ -7,14 +7,15 @@ import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { FaSearch } from 'react-icons/fa';
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
-function Navegador({ carrito }) {
+function Navegationbar({ carrito }) {
 
   return (
     <Navbar expand="lg" className="bg-light">
       <Container>
         {/* Logo a la izquierda */}
-        <Navbar.Brand href="#home" className="d-flex align-items-center gap-3">
+        <Navbar.Brand href="/" className="d-flex align-items-center gap-3">
           <img
             src="../public/nanotechnology.png"
             width="40"
@@ -35,11 +36,11 @@ function Navegador({ carrito }) {
         <Navbar.Collapse id="navbar-nav" className="justify-content-end">
           {/* Lista de categorías al centro */}
           <Nav className="text-center">
-            <Nav.Link href="#celulares">Celulares</Nav.Link>
-            <Nav.Link href="#laptops">Laptops</Nav.Link>
-            <Nav.Link href="#fundas">Fundas</Nav.Link>
-            <Nav.Link href="#accesorios">Accesorios</Nav.Link>
-            <Nav.Link href="#otros">Otros</Nav.Link>
+            <Nav.Link ><Link className=' text-decoration-none  text-secondary' to="/category/Celulares">Celulares</Link></Nav.Link>
+            <Nav.Link ><Link className=' text-decoration-none  text-secondary' to="/category/Laptops">Laptops</Link></Nav.Link>
+            <Nav.Link ><Link className=' text-decoration-none  text-secondary' to="/category/Fundas">Fundas</Link></Nav.Link>
+            <Nav.Link ><Link className=' text-decoration-none  text-secondary' to="/category/Accesorios">Accesorios</Link></Nav.Link>
+            {/* <Nav.Link href="otros">Otros</Nav.Link> */}
           </Nav>
 
           {/* Buscador y lupa a la derecha */}
@@ -66,4 +67,4 @@ function Navegador({ carrito }) {
   );
 }
 
-export default Navegador;
+export default Navegationbar;
