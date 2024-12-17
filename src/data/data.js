@@ -5,7 +5,7 @@ const products = [
         description: "El mejor celular de la actualidad",
         price: 1200,
         category: "Celulares",
-        image: "https://http2.mlstatic.com/D_NQ_NP_2X_654001-MLA52556725538_082022-O.webp",
+        image: "../public/img/ihpone14.jpg",
     },
     {
         id: "MH-2",
@@ -13,7 +13,7 @@ const products = [
         description: "El mejor celular de la actualidad",
         price: 1000,
         category: "Celulares",
-        image: "https://http2.mlstatic.com/D_NQ_NP_2X_654001-MLA52556725538_082022-O.webp",
+        image: "../public/img/iphone13.jpg",
     },
     {
         id: "MH-3",
@@ -21,7 +21,7 @@ const products = [
         description: "El mejor celular de la actualidad",
         price: 800,
         category: "Celulares",
-        image: "https://http2.mlstatic.com/D_NQ_NP_2X_654001-MLA52556725538_082022-O.webp",
+        image: "../public/img/iphone12.jpg",
     },
     {
         id: "MH-4",
@@ -29,7 +29,7 @@ const products = [
         description: "El mejor celular de la actualidad",
         price: 4000,
         category: "Laptops",
-        image: "https://http2.mlstatic.com/D_NQ_NP_2X_654001-MLA52556725538_082022-O.webp",
+        image: "../public/img/macpro.jpg",
     },
     {
         id: "MH-5",
@@ -37,7 +37,7 @@ const products = [
         description: "El mejor celular de la actualidad",
         price: 3000,
         category: "Laptops",
-        image: "https://http2.mlstatic.com/D_NQ_NP_2X_654001-MLA52556725538_082022-O.webp",
+        image: "../public/img/macair.jpg",
     },
     {
         id: "MH-6",
@@ -45,7 +45,7 @@ const products = [
         description: "El mejor celular de la actualidad",
         price: 2000,
         category: "Laptops",
-        image: "https://http2.mlstatic.com/D_NQ_NP_2X_654001-MLA52556725538_082022-O.webp",
+        image: "../public/img/macmini.jpg",
     },
     {
         id: "MH-7",
@@ -53,7 +53,7 @@ const products = [
         description: "El mejor celular de la actualidad",
         price: 500,
         category: "Fundas",
-        image: "https://http2.mlstatic.com/D_NQ_NP_2X_654001-MLA52556725538_082022-O.webp",
+        image: "../public/img/fundanegra.jpg",
     },
     {
         id: "MH-8",
@@ -61,7 +61,7 @@ const products = [
         description: "El mejor celular de la actualidad",
         price: 500,
         category: "Fundas",
-        image: "https://http2.mlstatic.com/D_NQ_NP_2X_654001-MLA52556725538_082022-O.webp",
+        image: "../public/img/fundamarron.jpg",
     },
     {
         id: "MH-9",
@@ -69,7 +69,7 @@ const products = [
         description: "El mejor celular de la actualidad",
         price: 500,
         category: "Fundas",
-        image: "https://http2.mlstatic.com/D_NQ_NP_2X_654001-MLA52556725538_082022-O.webp",
+        image: "../public/img/fundaazul.jpg",
     },
     {
         id: "MH-10",
@@ -77,7 +77,7 @@ const products = [
         description: "El mejor celular de la actualidad",
         price: 500,
         category: "Accesorios",
-        image: "https://http2.mlstatic.com/D_NQ_NP_2X_654001-MLA52556725538_082022-O.webp",
+        image: "../public/img/cargador.jpg",
     },
     {
         id: "MH-11",
@@ -85,7 +85,7 @@ const products = [
         description: "El mejor celular de la actualidad",
         price: 500,
         category: "Accesorios",
-        image: "https://http2.mlstatic.com/D_NQ_NP_2X_654001-MLA52556725538_082022-O.webp",
+        image: "../public/img/tripode.jpg",
     }
 ]
 

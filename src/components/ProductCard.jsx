@@ -15,7 +15,6 @@ const ProductCard = ({ producto }) => {
 
   return (
     <Card style={{ marginBottom: '2rem', width: '100%', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}>
-
       <Image src={image} alt={title} style={{ height: '150px', objectFit: 'cover', borderRadius: '10px 10px 0 0' }} fluid />
       <Card.Body>
         <Card.Title>{title}</Card.Title>

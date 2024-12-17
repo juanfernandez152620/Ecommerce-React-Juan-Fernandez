@@ -37,11 +37,16 @@ const ItemDetailContainer = () => {
     <div className='container col col-md-6'>
       <h2>Detalle del Producto</h2>
       <Card>
-        <Card.Body>
-          <Card.Title>{producto?.title}</Card.Title>
-          <Image src={producto?.image} alt={producto?.name} fluid />
-          <Card.Text>{producto?.description}</Card.Text>
-          <Card.Text><strong>${producto?.price}</strong></Card.Text>
+        <Card.Body className='d-block d-md-flex justify-content-between'>
+          <div>
+            <Image src={producto?.image} alt={producto?.name} fluid className='w-100' />
+
+          </div>
+          <div className='p-3'>
+            <Card.Title className='text-md-center fs-3'>{producto?.title}</Card.Title>
+            <Card.Text>{producto?.description}</Card.Text>
+            <Card.Text><strong>${producto?.price}</strong></Card.Text>
+          </div>
         </Card.Body>
       </Card>
     </div>
