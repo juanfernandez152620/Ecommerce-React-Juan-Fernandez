@@ -72,7 +72,7 @@ const ItemDetailContainer = () => {
             <Card>
               <Card.Body className="d-block d-md-flex justify-content-between">
                 <div>
-                  <Image src={'../public/img/' + producto?.image} alt={producto?.name} fluid className="w-100" />
+                  <Image src={'img/' + producto?.image} alt={producto?.name} fluid className="w-100" />
                 </div>
                 <div className="p-3">
                   <Card.Title className="text-md-center fs-3">{producto?.title}</Card.Title>

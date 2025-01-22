@@ -8,7 +8,7 @@ const CardCheckOut = ({ producto, delProduct }) => {
       {/* Imagen del producto */}
       <Card.Img
         variant="top"
-        src={'../public/img/' + producto.image}
+        src={'img/' + producto.image}
         alt={producto.title}
       />
       <Card.Body>
