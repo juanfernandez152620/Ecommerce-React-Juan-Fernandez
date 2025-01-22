@@ -19,7 +19,7 @@ function Navegationbar() {
           <Nav.Link >
             <Link className='text-decoration-none text-black' to="/">
               <img
-                src="../public/nanotechnology.png"
+                src="img/nanotechnology.png"
                 width="40"
                 height="40"
                 className="d-inline-block align-top"
