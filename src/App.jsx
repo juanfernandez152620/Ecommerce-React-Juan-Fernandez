@@ -2,18 +2,25 @@ import Navegationbar from './components/Navegador.jsx'
 import ItemListContainer from './components/ItemListContainer.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ItemDetailContainer from './components/itemdetailcontainer.jsx'
+import Checkout from './components/CheckOut.jsx'
+import { CartProvider } from './context/CartContext.jsx'
+import Cart from './components/Cart.jsx'
 
 function App() {
 
   return (
     <>
       <BrowserRouter >
-        <Navegationbar carrito={1} />
-        <Routes>
-          <Route path="/" element={<ItemListContainer Saludo={"Este es mi saludo"} /> } />
-          <Route path="/category/:idCategory" element={<ItemListContainer Saludo={"Este es mi saludo"} /> } />
-          <Route path="/detail/:id" element={<ItemDetailContainer />} />
-        </Routes>
+        <CartProvider> {/* El context del carrito */}
+          <Navegationbar />
+          <Routes>
+            <Route path="/" element={<ItemListContainer Saludo={"Bienvenido a MobileHub"} /> } />
+            <Route path="/category/:idCategory" element={<ItemListContainer Saludo={"Bienvenido a MobileHub"} /> } />
+            <Route path="/detail/:id" element={<ItemDetailContainer />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+        </CartProvider>
       </BrowserRouter>
     </>
   )

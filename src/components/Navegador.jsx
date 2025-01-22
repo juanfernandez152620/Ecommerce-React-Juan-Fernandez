@@ -1,34 +1,40 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
-import { FaSearch } from 'react-icons/fa';
-import CartWidget from './CartWidget';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
+import InputGroup from 'react-bootstrap/InputGroup'
+import { FaSearch } from 'react-icons/fa'
+import CartWidget from './CartWidget'
+import { Link } from 'react-router-dom'
 
-function Navegationbar({ carrito }) {
+function Navegationbar() {
 
   return (
     <Navbar expand="lg" className="bg-light">
       <Container>
         {/* Logo a la izquierda */}
-        <Navbar.Brand href="/" className="d-flex align-items-center gap-3">
-          <img
-            src="../public/nanotechnology.png"
-            width="40"
-            height="40"
-            className="d-inline-block align-top"
-            alt="Logo"
-          />
-          <span className="fs-4">Mobile Hub</span>
+        <Navbar.Brand className="d-flex align-items-center gap-3">
+          <Nav.Link >
+            <Link className='text-decoration-none text-black' to="/">
+              <img
+                src="../public/nanotechnology.png"
+                width="40"
+                height="40"
+                className="d-inline-block align-top"
+                alt="Logo"
+              />
+              <span className="fs-4">Mobile Hub</span>
+            </Link>
+          </Nav.Link>
         </Navbar.Brand>
 
         {/* Ícono del carrito */}
         <div className="position-relative ms-3 d-block d-md-none">
-          <CartWidget carrito={carrito} />
+          <Link className=' text-decoration-none  text-black' to="/cart">
+            <CartWidget />  
+          </Link>
         </div>
 
         {/* Toggle para móviles */}
@@ -43,7 +49,7 @@ function Navegationbar({ carrito }) {
             {/* <Nav.Link href="otros">Otros</Nav.Link> */}
           </Nav>
 
-          {/* Buscador y lupa a la derecha */}
+          {/* Buscador y lupa a la derecha | Hubo ganas pero No hubo tiempo para implementar funcion
           <Form className="d-flex ps-0 ps-md-3">
             <InputGroup>
               <Form.Control
@@ -55,16 +61,18 @@ function Navegationbar({ carrito }) {
                 <FaSearch />
               </Button>
             </InputGroup>
-          </Form>
+          </Form> */}
 
           {/* Ícono del carrito */}
           <div className="position-relative ms-3 d-none d-md-block">
-            <CartWidget carrito={carrito} />
+            <Link className=' text-decoration-none  text-black' to="/cart">
+              <CartWidget />  
+            </Link>
           </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  );
+  )
 }
 
-export default Navegationbar;
+export default Navegationbar
