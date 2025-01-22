@@ -37,5 +37,7 @@ Este proyecto utiliza las siguientes dependencias que agregan valor al desarroll
 
 ## Vista previa del proyecto
 
-<img src="public/vistaprevia/2e77052ee864aa051a3348fac8f9c2c2.png" >
-<img src="public/vistaprevia/49b74cfcb754e3c99016d44d9f6572de.png" >
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+  <img src="public/vistaprevia/2e77052ee864aa051a3348fac8f9c2c2.png" style="width: 50%; height: auto;">
+  <img src="public/vistaprevia/49b74cfcb754e3c99016d44d9f6572de.png" style="width: 50%; height: auto;">
+</div>
